@@ -1,0 +1,15 @@
+﻿@page
+@model AuthApp.Pages.UserModel
+@{
+}
+
+<h2>Welcome to your account</h2>
+
+<div>
+    <h2>First Name : @Model.AppUser?.FirstName</h2>
+    <h2>Last Name : @Model.AppUser?.LastName</h2>
+    <h2>Email : @Model.AppUser?.Email</h2>
+    <h2>Phone : @Model.AppUser?.PhoneNumber</h2>
+    <h2>Address : @Model.AppUser?.Address</h2>
+    <h2>Created At : @Model.AppUser?.CreatedAt.ToString("MM/dd/yyyy")</h2>
+</div>
